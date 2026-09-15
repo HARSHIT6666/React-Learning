@@ -8,11 +8,13 @@ import { Route , Routes} from 'react-router-dom'
 import Notfound from './pages/Notfound'
 import Courses from './pages/Courses'
 import CoursesDetail from './pages/CoursesDetail'
+import Navbar2 from './component/Navbar2'
 
 const App = () => {
   return (
     <div className='h-screen  bg-black text-white'>
      <Navbar />
+     <Navbar2 />
      <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/product' element={<Product />}/>
